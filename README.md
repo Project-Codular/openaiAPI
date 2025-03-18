@@ -48,7 +48,7 @@ func main() {
   client := openai.NewClient(apiKey, model, temperature)
 
 
-  // Load system prompts from a YAML file if you
+  // Load system prompts from a YAML file if you need
   //prompts, err := openai.LoadSystemPrompts("system_prompts.yaml")
   //if err != nil {
   //  log.Fatalf("Error loading system prompts: %v", err)
@@ -63,9 +63,12 @@ func main() {
 
   // Set the user prompt
   userPrompt := "Who was the first person to go to space?"
+  // Delete this line if you use system_prompts.yaml
+  systemPrompt := "You're a useful assistant."
+
 
   // Send a request using the client and print the response
-  response, err := client.SendChat("You're a useful assistant.", userPrompt)
+  response, err := client.SendChat(systemPrompt, userPrompt)
   if err != nil {
     log.Fatalf("Error sending request: %v", err)
   }
