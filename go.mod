@@ -1,4 +1,4 @@
-module openaiAPI
+module github.com/Project-Codular/openaiAPI
 
 go 1.24.1
 
