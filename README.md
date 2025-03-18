@@ -19,13 +19,18 @@ This package provides a convenient way to send requests to the OpenAI API. You c
    ```bash
    go get github.com/Project-Codular/openaiAPI
    ```
-3. **Install package dependencies**:
+3. **Import package into your code**:
+   ```go
+   import "github.com/Project-Codular/openaiAPI/openai"
+   ```
+
+4. **Install package dependencies**:
 
    ```bash
    go mod tidy
    ```
 
-4. **Follow the instructions in Usage**
+5. **Follow the instructions in Usage**
 
 ## Usage
 
