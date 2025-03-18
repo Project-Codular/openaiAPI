@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"openaiAPI/openai"
+	"github.com/Project-Codular/openaiAPI/openai"
 )
 
 func main() {
